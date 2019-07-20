@@ -1,8 +1,9 @@
 <?php
 
 
-Route::get('/', 'HomeController@index'); //HomeController pubblico
+Route::get('/', 'HomeController@index')->name('home'); //HomeController pubblico
 Route::get('/posts/{slug}', 'PostController@show')->name('posts.show');
+Route::get('/categories/{slug}', 'PostController@postInCategory')->name('posts.category');
 
 Auth::routes();
 
