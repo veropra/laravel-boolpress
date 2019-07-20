@@ -9,6 +9,6 @@ class HomeController extends Controller
 {
     public function index(){
       $posts = Post::all();
-      return view('home');
+      return view('home')->with(['posts' => $posts]);
     }
 }

@@ -13,12 +13,6 @@ class PostTableSeeder extends Seeder
 
       for ($i=0; $i < 20; $i++) {
           $post = new Post();
-          /*
-          $post->title = $faker->sentence();
-          $post->content = $faker->text(2000);
-          $post->author = $faker->firstName . ' ' . $faker->lastName;
-          $post->slug = Str::slug($post->title);
-          */
           $titolo = $faker->sentence();
           $dati_post = [
             'title' => $titolo,
